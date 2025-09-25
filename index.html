@@ -12,39 +12,41 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
- <section class="hero" id="top" aria-label="Hero">
-  <!-- 背景動画（ヒーロー専用） -->
-  <video class="hero-video" autoplay muted loop playsinline poster="" aria-hidden="true">
-    <source src="6356625-hd_1920_1080_30fps.mp4" type="video/mp4">
-  </video>
-
-  <div class="hero-inner">
-    <h1><span class="brand">Happy Error Studio</span></h1>
-    <p class="tagline">Enjoy the Error, Create the Future</p>
-    <p class="sub">小さな“エラー”からはじまる、大きな創造。</p>
-    <div class="hero-cta">
-      <a class="btn primary" href="#services">できることを見る</a>
-      <a class="btn ghost" href="#contact">相談してみる</a>
-    </div>
-  </div>
-  <div class="hero-bg" aria-hidden="true"></div>
-</section>
-
-  
+  <!-- 先頭にヘッダー -->
   <header class="site-header">
-  <a href="#top" class="logo" aria-label="Happy Error Studio">
-    <img src="BFA9B196-5554-4032-9C45-08AD75BDE047.jpeg" alt="Happy Error Studio" style="height:40px; width:auto;">
-  </a>
-  <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
-  <nav class="site-nav" aria-label="Primary">
-    <a href="#about">理念</a>
-    <a href="#services">サービス</a>
-    <a href="#works">実績</a>
-    <a href="#profile">プロフィール</a>
-    <a href="#contact" class="cta">お問い合わせ</a>
-  </nav>
-</header>
+    <a href="#top" class="logo" aria-label="Happy Error Studio">
+      <img src="BFA9B196-5554-4032-9C45-08AD75BDE047.jpeg" alt="Happy Error Studio" style="height:40px; width:auto;">
+    </a>
+    <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#about">理念</a>
+      <a href="#services">サービス</a>
+      <a href="#works">実績</a>
+      <a href="#profile">プロフィール</a>
+      <a href="#contact" class="cta">お問い合わせ</a>
+    </nav>
+  </header>
 
+  <!-- ヒーロー（見出しセクション） -->
+  <section class="hero" id="top" aria-label="Hero">
+    <!-- 背景動画（ヒーロー専用） -->
+    <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+      <source src="6356625-hd_1920_1080_30fps.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-inner">
+      <h1><span class="brand">Happy Error Studio</span></h1>
+      <p class="tagline">Enjoy the Error, Create the Future</p>
+      <p class="sub">小さな“エラー”からはじまる、大きな創造。</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#services">できることを見る</a>
+        <a class="btn ghost" href="#contact">相談してみる</a>
+      </div>
+    </div>
+    <div class="hero-bg" aria-hidden="true"></div>
+  </section>
+
+  <!-- 以降はそのまま -->
   <main>
     <section class="about" id="about">
       <div class="container">
