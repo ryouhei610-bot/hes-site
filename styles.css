@@ -70,3 +70,15 @@ h2{font-size:clamp(22px,3vw,32px);margin:0 0 1rem}
   .profile-grid{grid-template-columns:1fr}
   .contact-form .row{grid-template-columns:1fr}
 }
+
+/* 背景動画スタイル */
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  filter: brightness(0.4); /* 暗くして文字を読みやすくする */
+}
