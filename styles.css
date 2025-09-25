@@ -71,14 +71,22 @@ h2{font-size:clamp(22px,3vw,32px);margin:0 0 1rem}
   .contact-form .row{grid-template-columns:1fr}
 }
 
-/* 背景動画スタイル */
-#bg-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
+/* === Hero 背景動画のレイヤー調整 === */
+.hero { position: relative; overflow: hidden; }   /* 既にあってもOK（上書き可） */
+
+.hero .hero-video {
+  position: absolute;
+  inset: 0;            /* top/right/bottom/left:0 と同じ */
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  filter: brightness(0.4); /* 暗くして文字を読みやすくする */
+  pointer-events: none;  /* クリックを邪魔しない */
+  z-index: 0;            /* ↓のテキストより下、装飾より下に置きたい場合は -1 に */
+  filter: brightness(0.40);
 }
+
+/* テキストは動画の上に */
+.hero .hero-inner { position: relative; z-index: 2; }
+
+/* 既存のグラデ背景（.hero-bg::before/after）は動画より下にしたいなら… */
+.hero .hero-bg { position: relative; z-index: 1; }    /* 1: 装飾がうっすら上に来る／0: 動画の上に来ないようにする */
